@@ -1,0 +1,130 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Roboto", sans-seriff;
+  background-image: url(/src/components/img/bg.jpg);
+  color: #fff;
+  margin: 0;
+}
+
+#app {
+  margin-top: 10px;
+}
+
+#body-wrap {
+	padding: 100px 20px;
+}
+
+.container {
+  margin: 50px auto;
+  width: 100%;
+  text-align: center;
+}
+header#header {
+  margin-bottom: 120px;
+}
+.main-content h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 0;        
+}
+#countdown-clock{
+font-size: 30px;
+display: flex;
+justify-content: center;
+margin: 50px;
+}
+#countdown-clock > .time{
+background: rgba(137,137,137,0.3);
+border-radius: 10px;
+padding: 20px;
+margin-right: 10px;
+}
+#countdown-clock .time > span{
+font-weight: 700;
+}
+#countdown-clock .time small{
+padding-top: 5px;
+font-size: 12px;
+text-transform: uppercase;
+  display: block;
+}
+.main-content p {
+  font-size: 1em;
+  margin: 0;
+  color: #aaa;
+}
+#form .form-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+input::placeholder{
+ color: #949393;
+}
+.form-group input.form-control {
+  width: 250px;
+  height: 50px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 20px;
+  border: none;
+}
+.form-group button.submit-button {
+  padding: 18px 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0043ee;
+  border: none;
+cursor: pointer;
+  color: #fff;
+}
+.form-group button.submit-button:hover {
+  background-color: #222630;
+}
+.form-group button.submit-button span {
+  font-weight: 700;
+  padding-left: 5px;
+}
+#footer .social-links {
+  padding-top: 20px;
+}
+#footer .social-links ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#footer .social-links li {
+  padding-right: 20px;
+}
+#footer .social-links ul a {
+  font-size: 1.6em;
+  text-decoration: none;
+}
+.copyright {
+color: #aaa;
+}
+
+@media (max-width: 768px) {
+header#header {
+    margin-bottom: 50px;
+}
+#body-wrap {
+  padding: 0px 20px;
+}
+#countdown-clock > .time {
+  padding: 14px;
+}
+.form-group button.submit-button {
+    width: 140px;
+      padding: 18px 9px;
+}
+}
+
